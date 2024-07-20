@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="/assets/img/Logo.png" >
+    <title>Reto Alura - Latam</title>
+  </head>
+  <body>
+    <header class="logo-alura">
+      <img src="./assets/img/Logo.png" alt="logo alura" />
+    </header>
+    <div class="container-first">
+      <section>
+        <textarea
+          name="userInput"
+          id="userInput"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div>
+          <div class="alert-message">
+            <div>
+                <img src="./assets/img/alert.png" alt="mensaje de alerta" />
+            </div>
+            <blockquote>Solo letras minúsculas y sin acentos</blockquote>
+          </div>
+          <button class="button-style" id="bttn-encriptar">Encriptar</button>
+          <button class="button-style" id="bttn-desencriptar">Desencriptar</button>
+        </div>
+      </section>
+      <section>
+        <div class="info-message" id="content-first">
+            <div>
+                <img src="./assets/img/Muñeco.png" alt="muñeco">
+            </div>
+            <strong>Ningún mensaje fue encontrado</strong>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="hidden" id="output-user">
+            <div class="message-final">
+                <strong>Resultado de petición</strong>
+                <p class="textOutput" id="textOutput"></p>
+            </div>
+            <button class="button-style" id="copy-message">Copiar</button>
+        </div>
+      </section>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

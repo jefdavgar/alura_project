@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --color-fondo: #f3f5fc;
+  --color-blanco: #ffffff;
+  --color-azul: #0a3871;
+  --color-azul-claro: #1b77e7;
+  --color-gris: #d8dfe8;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--color-fondo);
+}
+textarea {
+  font-size: larger;
+  font-family: "Inter", sans-serif;
+  margin: 2rem 1rem;
+  width: 100%;
+  height: 50vh;
+  color: var(--color-azul);
+  border: none;
+  background-color: transparent;
+  resize: none;
+}
+img {
+  margin: 1rem 0.5rem;
+  pointer-events: none;
+  user-select: none;
+}
+strong {
+  text-align: center;
+  font-size: large;
+}
+.container-first {
+  display: flex;
+  justify-content: space-around;
+}
+.alert-message {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+.button-style {
+  background-color: var(--color-gris);
+  color: var(--color-azul);
+  font-size: medium;
+  padding: 1rem 5rem;
+  margin: 8px 0;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.button-style:hover {
+  background-color: var(--color-azul-claro);
+}
+.activo {
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+}
+.info-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 10% 1%;
+  text-align: center;
+  border-radius: 32px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-blanco);
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+.visible {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--color-blanco);
+  justify-content: space-between;
+  width: 65vh;
+  height: 80vh;
+  text-align: justify;
+  color: var(--color-azul);
+  border-radius: 32px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.message-final {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.textOutput {
+  width: 100%;
+  text-align: left;
+}
+@media screen and (max-width:950px){
+    .container-first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .visible{
+        width: 100%;
+        margin:1rem
+      }
+}
